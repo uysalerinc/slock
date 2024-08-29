@@ -1,0 +1,35 @@
+/* user and group to drop privileges to */
+static const char *user  = "wisteria";
+static const char *group = "nobody";
+
+static const char *colorname[NUMCOLS] = {
+	[INIT] =   "black",     /* after initialization */
+	[INPUT] =  "#005577",   /* during input */
+	[FAILED] = "#CC3333",   /* wrong password */
+};
+
+/* treat a cleared input like a wrong password (color) */
+static const int failonclear = 1;
+
+/* Background image path, should be available to the user above */
+static const char* background_image = "";
+
+/* default message */
+static const char * message = "Suckless: Software that sucks less.";
+
+/* text color */
+static const char * text_color = "#ffffff";
+
+/* text size (must be a valid size) */
+static const char * font_name = "6x13";
+
+
+/* enable or disable (1 means enable, 0 disable) bell sound when password is incorrect */
+static const int xbell = 0;
+
+/*Font settings for the time text*/
+static const float textsize=64.0;
+static const char* textfamily="serif";
+static const double textcolorred=255;
+static const double textcolorgreen=255;
+static const double textcolorblue=255;
